@@ -3,7 +3,11 @@ package lab4.code_lab04.code_lab04.dp.co;
 public class File implements FileSystemElement {
 
 	private String name;
-	
+
+	public String getName() {
+		return name;
+	}
+
 	public File(String name) {
 		this.name = name;
 	}
@@ -15,22 +19,8 @@ public class File implements FileSystemElement {
 	}
 
 	@Override
-	public boolean remove() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean move() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
 	public void print() {
 		System.out.println(name);
 	}
-	
-	
 
 }
